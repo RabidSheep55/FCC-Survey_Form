@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href='style.css' rel="stylesheet">
+    </style>
+  </head>
+
+  <body>
+    <form id="survey-form" action="index.html">
+
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Description bit, here is a lot of random words to fill the page up, bla, bla. Idk what to write here , I'm leaving to ski with my friends tomorrow and it's going to be liiit.</p>
+
+      <div class="formquestion">
+        <label id="name-label" class="label">
+          <p>Input your name:</p>
+        </label>
+        <input id="name" type="text" placeholder="Name" required class="field">
+      </div>
+
+      <div class="formquestion">
+        <label id="email-label" class="label">
+          <p>Drop your email down here:</p>
+        </label>
+        <input id="email" type="email" placeholder="email" required class="field">
+      </div>
+
+      <div class="formquestion">
+        <label id="number-label" class="label">
+          <p>Any number in mind?</p>
+        </label>
+        <input id="number" type="number" placeholder="number" class="field" min="1" max="125" required class="field">
+      </div>
+
+      <div class="formquestion">
+        <label id="dropdown-label" class="label">
+          <p>Wana give your gender too?</p>
+        </label>
+        <select id="dropdown" name="gender" class="dropdown field">
+          <option disabled value>Select an option</option>
+          <option value="male">Male</option>
+          <option value="Female">Female</option>
+          <option value="other">Other</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="formquestion">
+        <label id="radio-label" class="label">
+          <p>Do you accept to sell your soul to google?</p>
+        </label>
+        <ul style="list-style: none;" class="field">
+          <li><label for="yes"><input id="yes" type="radio" name="radio-btns" value="1"> Yes, sure</label></li>
+          <li><label for="course"><input id="course" type="radio" name="radio-btns" value="2"> Of course!!!</label></li>
+          <li><label for="yeah"><input id="yeah" type="radio" name="radio-btns" value="3"> Yeah, I guess...</label></li>
+        </ul>
+      </div>
+
+      <div class="formquestion">
+        <label id="lovegoogle" class="label">
+          <p>Why do you love Google?</p>
+        </label>
+        <ul style="list-style: none;" class="field">
+          <li><label for="search"> <input type="checkbox" name="love" value="1">The search engine!</label></li>
+          <li><label for="pixel"> <input type="checkbox" name="love" value="2">Their Pixel Phone</label></li>
+          <li><label for="data"> <input type="checkbox" name="love" value="3">Their data privacy policies</label></li>
+        </ul>
+      </div>
+
+      <div class="formquestion">
+        <label id="commnt-label" class="label">
+          <p>Please add any comments in the box below :)</p>
+        </label>
+        <textarea name="comments" rows="3" cols="50" placeholder="Any comments?" class="field comment"></textarea>
+      </div>
+
+      <button id="submit" type="submit" name="submit" class="formquestion"><b>Submit!</b></button>
+
+    </form>
+  </body>
+
+</html>

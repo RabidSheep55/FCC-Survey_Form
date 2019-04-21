@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Palanquin:100,200,400,500,700);
+
+:root {
+  --LightColor: hsl(210, 10%, 91%);
+  --DarkColor: hsl(210, 50%, 13%);
+}
+
+html {
+  background-color: hsl(210, 10%, 91%);
+  font-family: 'Palanquin', Helvetica, sans-serif;
+  color: var(--DarkColor);
+}
+
+p {
+  margin-bottom: 3px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#survey-form {
+  max-width: 600px;
+  background-color: hsl(210, 10%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  margin: 5px;
+}
+
+#description {
+  width: 90%;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.label {
+  margin: 0px;
+  padding: 0px;
+}
+
+.formquestion {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#submit {
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-top: 0px;
+  background-color: var(--LightColor);
+  border: solid var(--DarkColor);
+  border-width: 0px 0px 4px 0px;
+  border-radius: 3px;
+  padding: 7px 10px 7px 10px;
+}
+
+.comment {
+  width: 90%;
+}
+
+#submit {
+  background-color: var(--DarkColor);
+  border: solid var(--LightColor);
+  color: var(--LightColor);
+  border-width: 3px;
+  border-radius: 1rem;
+}
